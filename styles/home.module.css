@@ -1,0 +1,36 @@
+.title {
+  font-size: 2em;
+  margin-bottom: 20px;
+  margin-top: 12px;
+  text-align: center;
+}
+
+.homePainting {
+  display: block;
+  width: 50%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.galleryLink {
+  display: table;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 20px auto 15px auto;
+  border: 2px solid #01579b;
+  cursor: pointer;
+  padding: 3px;
+}
+
+.galleryLink:hover {
+  color: white;
+  background-color: #01579b;
+}
+
+@media screen and (max-width: 480px) {
+  .homePainting {
+    width: 100%;
+  }
+}
+

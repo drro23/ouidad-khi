@@ -1,0 +1,14 @@
+.gallery {
+    width: 50%;
+    margin: 0 auto 0 auto;
+}
+
+.title {
+    text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+    .gallery {
+        width: 100%;
+    }
+}
