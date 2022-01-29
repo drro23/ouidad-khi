@@ -6,8 +6,7 @@ const Presentation = () => {
     return (
         <Layout>
             <div className="container">
-                <h1 className={styles.presentationTitle}>Présentation Philosophique</h1>
-                <h2 className={styles.subTitle}>Ouidad-Khi Artiste Peintre</h2>
+                <h1 className={styles.presentationTitle}>Présentation</h1>
                 <p className={styles.description}>
                     La peinture et la poésie ont toujours été mes domaines d’épanouissement<br/>
                     artistique depuis mon adolescence.<br/><br/>

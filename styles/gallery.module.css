@@ -7,6 +7,13 @@
     text-align: center;
 }
 
+.description {
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+    line-height: 1.6rem;
+}
+
 @media screen and (max-width: 500px) {
     .gallery {
         width: 100%;
