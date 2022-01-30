@@ -41,20 +41,21 @@ const Gallery = () => {
                     Elles se sont crées les unes après les autres dans le silence de mes nuits blanches.<br/>
                     <br/>
                     C’est une volonté que de signer à l’envers de mes toiles.<br/>
-                    Je laisse ainsi mes peintures "être"<br/>
+                    Je laisse ainsi mes peintures &quot;être&quot;<br/>
                     Je les veux libre afin qu’elles vous transportent dans les moindres recoins.<br/>
                     <br/>
-                    Essayez de vous défaire des codes, entrez à l’intérieur de mon univers vous êtes invités, prenez un billet pour ce voyage je vous accompagne en galaxie bleu.<br/>
+                    Essayez de vous défaire des codes, entrez à l’intérieur de mon univers vous êtes invités, prenez un
+                    billet pour ce voyage je vous accompagne en galaxie bleu.<br/>
 
                     Ouidad-Khi
                 </p>
                 <div className={styles.gallery}>
-                    <ImageGallery items={lifeInBlue} />
+                    <ImageGallery items={lifeInBlue}/>
                 </div>
 
                 <h2 className={styles.title}>Autres réalisations artistiques</h2>
                 <div className={styles.gallery}>
-                    <ImageGallery items={others} />
+                    <ImageGallery items={others}/>
                 </div>
             </div>
         </Layout>
