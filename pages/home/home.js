@@ -19,7 +19,7 @@ const Home = () => {
                 </Link>
             </div>
         </Layout>
-    )
+    );
 }
 
 export default Home;

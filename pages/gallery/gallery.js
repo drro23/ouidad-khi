@@ -34,7 +34,7 @@ const Gallery = () => {
                     La vie en bleu est une série à découvrir.<br/>
                     <br/>
                     <br/>
-                    La sensibilité, la perception est différente dans le regard des uns et des autres. <br/>
+                    La sensibilité, la perception est différente dans le regard des uns et des autres.<br/>
                     La vision varie et laisse une liberté t’interprétation.<br/>
                     <br/>
                     Mes toiles sont des photos abstraites de mon objectif intérieur imaginaire.<br/>
@@ -42,7 +42,7 @@ const Gallery = () => {
                     <br/>
                     C’est une volonté que de signer à l’envers de mes toiles.<br/>
                     Je laisse ainsi mes peintures &quot;être&quot;<br/>
-                    Je les veux libre afin qu’elles vous transportent dans les moindres recoins.<br/>
+                    Je les veux ainsi libre afin qu’elles vous transportent dans les moindres recoins.<br/>
                     <br/>
                     Essayez de vous défaire des codes, entrez à l’intérieur de mon univers vous êtes invités, prenez un
                     billet pour ce voyage je vous accompagne en galaxie bleu.<br/>
