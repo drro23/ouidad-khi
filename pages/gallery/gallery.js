@@ -37,9 +37,6 @@ const Gallery = () => {
                     La sensibilité, la perception est différente dans le regard des uns et des autres.<br/>
                     La vision varie et laisse une liberté t’interprétation.<br/>
                     <br/>
-                    Mes toiles sont des photos abstraites de mon objectif intérieur imaginaire.<br/>
-                    Elles se sont crées les unes après les autres dans le silence de mes nuits blanches.<br/>
-                    <br/>
                     C’est une volonté que de signer à l’envers de mes toiles.<br/>
                     Je laisse ainsi mes peintures &quot;être&quot;<br/>
                     Je les veux ainsi libre afin qu’elles vous transportent dans les moindres recoins.<br/>
