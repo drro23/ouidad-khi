@@ -2,9 +2,9 @@ import ImageGallery from 'react-image-gallery';
 import Layout from "./layout";
 import styles from "../styles/gallery.module.css";
 
-const lifeInBlueLength = 15;
+const lifeInBlueLength = 18;
 const lifeInBlue = [];
-const othersLength = 15;
+const othersLength = 10;
 const others = [];
 
 for (let i = 0; i < lifeInBlueLength; i++) {
