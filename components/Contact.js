@@ -1,6 +1,5 @@
 import Layout from "./layout";
 import Image from "next/image";
-import Link from "next/link";
 import styles from '../styles/contact.module.css';
 
 const Contact = () => {
@@ -11,7 +10,7 @@ const Contact = () => {
                 <p className={styles.message}>
                     Pour suivre mes dernières créations, découvrir les coulisses de mon atelier et échanger avec moi, rejoignez-moi sur Instagram.
                 </p>
-                <Link 
+                <a 
                     href="https://www.instagram.com/ouidadkhi/" 
                     target="_blank" 
                     rel="noopener noreferrer"
@@ -25,7 +24,7 @@ const Contact = () => {
                         className={styles.instagramLogo}
                     />
                     <span className={styles.ctaText}>Suivez-moi sur Instagram</span>
-                </Link>
+                </a>
             </div>
         </Layout>
     )

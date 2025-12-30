@@ -4,7 +4,7 @@ import styles from "../styles/gallery.module.css";
 
 const lifeInBlueLength = 15;
 const lifeInBlue = [];
-const othersLength = 14;
+const othersLength = 15;
 const others = [];
 
 for (let i = 0; i < lifeInBlueLength; i++) {
