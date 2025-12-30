@@ -1,13 +1,22 @@
-@import "~react-image-gallery/styles/css/image-gallery.css";
+@import "react-image-gallery/styles/css/image-gallery.css";
 
 @font-face {
   font-family: "Lane";
   src: url("/assets/lane/LANENAR_.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Scriptina";
   src: url("/assets/scriptina/SCRIPTIN.ttf");
+  font-display: swap;
+}
+
+:root {
+  --primary-color: #01579b;
+  --text-color: #333;
+  --bg-color: #fcfcfc;
+  --accent-color: #0288d1;
 }
 
 html,
@@ -16,11 +25,21 @@ body {
   margin: 0;
   font-family: "Lane", BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  font-size: 18px;
+  overflow-x: hidden;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--primary-color);
 }
 
 * {
@@ -29,6 +48,23 @@ a {
 
 .container {
   padding: 0 2rem;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin: 2rem auto;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fadeIn {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
 }

@@ -1,36 +1,86 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 100px); /* Adjust for header height */
+    padding: 2rem 1rem;
+    position: relative;
+    z-index: 1;
+}
+
 .title {
-  font-size: 2em;
-  margin-bottom: 20px;
-  margin-top: 12px;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  margin-top: 0;
   text-align: center;
+  font-family: inherit; /* Use global simple font */
+  font-weight: 300; /* Sober and simple */
+  color: #222;
+  position: relative;
+  z-index: 2;
+  text-transform: uppercase; /* Clean look */
+  letter-spacing: 2px;
 }
 
 .homePainting {
   display: block;
-  width: 50%;
+  width: 100%;
+  max-width: 650px; /* Reduced max-width for better proportion */
+  margin: 0 auto;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  border-radius: 4px; /* Slightly less rounded for a more canvas-like feel */
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  position: relative;
+  z-index: 1; /* Lower z-index than title */
+  line-height: 0; /* Removes potential bottom gap */
+}
+
+.homePainting:hover {
+  transform: scale(1.02); /* Scale instead of translateY to avoid overlapping text unexpectedly */
 }
 
 .galleryLink {
-  display: table;
-  font-weight: bold;
-  font-size: 1.1rem;
-  margin: 20px auto 15px auto;
-  border: 2px solid #01579b;
+  display: inline-block; /* Ensure block model for margins to work */
+  font-weight: 500;
+  font-size: 1rem; /* Slightly smaller for elegance */
+  margin: 3rem auto 0 auto; /* Added explicit top margin */
+  border: 1px solid #01579b; /* Thinner border */
+  background-color: transparent;
+  color: #01579b;
   cursor: pointer;
-  padding: 3px 5px 3px 5px;
+  padding: 12px 35px;
+  border-radius: 2px; /* Less rounded for professional art feel */
+  transition: all 0.4s ease;
+  text-transform: uppercase;
+  letter-spacing: 2px; /* Increased letter spacing */
+  text-align: center;
+  text-decoration: none; /* Ensure no underline */
 }
 
 .galleryLink:hover {
   color: white;
   background-color: #01579b;
+  box-shadow: 0 5px 15px rgba(1, 87, 155, 0.2);
+  transform: translateY(-2px);
 }
 
 @media screen and (max-width: 480px) {
+  .title {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+  }
+  
   .homePainting {
     width: 100%;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  }
+  
+  .galleryLink {
+      font-size: 0.9rem;
+      padding: 10px 25px;
+      margin-top: 2rem;
   }
 }
-

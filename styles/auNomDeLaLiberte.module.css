@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-family: inherit;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.imageContainer {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.textContainer {
+    max-width: 800px;
+    padding: 1rem;
+    line-height: 1.8;
+    text-align: justify;
+    font-size: 1.1rem;
+}
+
+.textContainer p {
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    .title {
+        font-size: 1.5rem;
+    }
+}
+

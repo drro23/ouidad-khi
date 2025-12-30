@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  text-align: center;
+  min-height: 60vh;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 2rem;
+  font-family: inherit;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.message {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 3rem;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.instagramLink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.instagramLink:hover {
+  transform: scale(1.05);
+}
+
+.instagramLogo {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: box-shadow 0.3s ease;
+}
+
+.instagramLink:hover .instagramLogo {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.ctaText {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #01579b;
+}
+

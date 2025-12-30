@@ -2,69 +2,107 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 15px 0 15px;
+    padding: 1rem 2rem;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(5px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    /* box-shadow: 0 2px 10px rgba(0,0,0,0.05); */
+    transition: all 0.3s ease;
 }
 
 .navLogoContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: auto;
 }
 
 .navLogo {
     font-family: "Scriptina", "Arial", serif;
-    font-size: 1.2em;
+    font-size: 2rem;
     font-weight: bold;
+    color: #333;
+    transition: transform 0.3s ease;
 }
 
-.navLinks > * {
+.navLogo:hover {
+    transform: scale(1.05);
+}
+
+.navLinks {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navLinks > a {
     font-weight: bold;
+    font-size: 1.1rem;
+    position: relative;
+    padding-bottom: 5px;
 }
 
-.navLinks > :not(:first-child) {
-    margin-left: 10px;
+.navLinks > a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #01579b;
+    transition: width 0.3s ease;
 }
 
-.navLinks > :hover {
-    border-bottom: 2px solid #01579b;
+.navLinks > a:hover::after {
+    width: 100%;
 }
 
-.active {
-    display: flex !important;
-    /*animation: menuAnim .2s ease-in forwards;*/
-    /*transform: translateY(-40%);*/
-}
-
-@media screen and (max-width: 480px) {
+/* Mobile Menu */
+@media screen and (max-width: 768px) {
     .navbar {
         flex-direction: column;
-        align-items: center;
+        padding: 1rem;
     }
 
     .navLogoContainer {
         width: 100%;
+        margin-bottom: 0.5rem;
     }
-
+    
     .navLogo {
-        display: block;
-        align-self: center;
+        font-size: 1.8rem;
     }
 
     .navLinks {
-        margin-top: 10px;
-        flex-direction: column;
-        align-items: center;
         display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+        margin-top: 1rem;
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
     }
 
-    .navLinks > * {
-        margin: 10px 0 0 0 !important;
-    }
-}
-
-@keyframes menuAnim {
-    100% {
+    .navLinks.active {
+        display: flex;
+        opacity: 1;
         transform: translateY(0);
+    }
+
+    .navLinks > a {
+        width: 100%;
+        text-align: center;
+        padding: 0.8rem;
+        border-bottom: 1px solid #eee;
+    }
+    
+    .navLinks > a:last-child {
+        border-bottom: none;
+    }
+    
+    .navLinks > a::after {
+        display: none;
     }
 }

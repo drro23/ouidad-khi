@@ -6,7 +6,7 @@ import styles from '../styles/layout.module.css'
 const Layout = ({children}) => {
     return (<>
         <Navigation/>
-        <main>
+        <main className="fadeIn">
             {children}
         </main>
         {/*<Footer/>*/}

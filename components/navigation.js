@@ -22,9 +22,9 @@ const Navigation = () => {
                     <LineMenuButton updateMenu={onUpdateMenu}/>
                 </div>
                 <div className={navClassName}>
-                    <Link href="/">Accueil</Link>
-                    <Link href="/presentation">Présentation philosophique</Link>
+                    <Link href="/presentation">Présentation</Link>
                     <Link href="/gallery">Galerie</Link>
+                    <Link href="/au-nom-de-la-liberte">Au nom de la liberté</Link>
                     <Link href="/contact">Contact</Link>
                 </div>
             </nav>
